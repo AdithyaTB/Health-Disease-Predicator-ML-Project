@@ -1,0 +1,114 @@
+/* General reset and body styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General reset and body styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e7eff6; /* Light background color */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.welcome-container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1); /* More subtle shadow */
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.welcome-container:hover {
+  transform: scale(1.02); /* Slight zoom-in effect */
+}
+
+.welcome-message h1 {
+  font-size: 36px;
+  color: #2e7d32; /* Rich green */
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
+}
+
+.welcome-message p {
+  font-size: 20px;
+  color: #5f6368; /* Softer dark color */
+  margin-bottom: 40px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-button {
+  font-size: 18px;
+  padding: 14px 40px;
+  background: linear-gradient(145deg, #4CAF50, #2e7d32); /* Gradient button */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slight shadow for depth */
+  text-transform: uppercase; /* Button text in uppercase */
+  letter-spacing: 1px;
+  outline: none;
+}
+
+.welcome-button:hover {
+  background: linear-gradient(145deg, #45a049, #388e3c); /* Hover state with darker gradient */
+  transform: translateY(-4px); /* Slightly lift on hover */
+}
+
+.welcome-button:active {
+  transform: translateY(1px); /* Button presses down on click */
+}
+
+.welcome-button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 128, 0, 0.3); /* Green focus effect */
+  outline: none;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .welcome-container {
+    width: 90%;
+    padding: 25px 30px;
+  }
+
+  .welcome-message h1 {
+    font-size: 30px;
+  }
+
+  .welcome-message p {
+    font-size: 18px;
+  }
+
+  .welcome-button {
+    width: 100%;
+    padding: 14px 0;
+  }
+}
